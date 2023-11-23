@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Rakuten music アルバム無限リピート",
+  "description": "Rakuten music のアルバムの最後の曲が再生されても初めの曲から再生されて無限リピートされます。",
+  "version": "1.0.0",
+  "icons": {
+    "16": "src/images/16.png",
+    "32": "src/images/32.png",
+    "48": "src/images/48.png",
+    "128": "src/images/128.png"
+  },
+  "action": {},
+  "content_scripts": [
+    {
+      "matches": ["https://music.rakuten.co.jp/*"],
+      "js": ["src/content-script/contentScript.ts"]
+    }
+  ]
+}
